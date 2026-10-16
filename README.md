@@ -65,6 +65,8 @@ Customer data → Data quality checks → EDA → Feature engineering
 
 ```
 ├── Fintech_Customer_Segmentation.ipynb   # full analysis
+├── app.py                                 # Streamlit dashboard
+├── DEPLOYMENT.md                          # deployment plan
 ├── data/High_Value_Customer_Identification_Final.xlsx
 ├── reports/Project_Concept_Report.pdf     # problem statement & system design
 ├── reports/EDA_Report.docx                # detailed EDA write-up
@@ -76,8 +78,15 @@ Customer data → Data quality checks → EDA → Feature engineering
 
 ```bash
 pip install -r requirements.txt
+
+# Interactive dashboard
+streamlit run app.py
+
+# Full analysis notebook
 jupyter notebook Fintech_Customer_Segmentation.ipynb
 ```
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) to deploy the dashboard on Streamlit Community Cloud.
 
 ## Future work
 
